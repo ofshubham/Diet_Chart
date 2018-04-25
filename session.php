@@ -1,5 +1,5 @@
 <?php
-   include('C:\Users\VARTIKA MISHRA\Desktop\shubham\space\4\config.php');
+   include('C:\Users\VARTIKA MISHRA\Desktop\shubham\space\4\db.php');
    session_start();
    
    $user_check = $_SESSION['login_user'];

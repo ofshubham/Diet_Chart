@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="calbmistyle.css">
 <title>BMI</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
                     </ul>
                 </nav>
         </div>
-        <div class="stuff">
+        <!--<div class="stuff">
             <?php
             error_reporting(0);
             $bmi=$height=$weight=$ibw=$bmr=0;
@@ -27,7 +27,6 @@
                 $weight=$_POST["weight"];
                 $height=$_POST["height"];
                 $age=$_POST["age"];
-                $preference = $_POST['preference'];
 
                 $res=$height - 1.524;
                 $res=$res/.0254;
@@ -46,12 +45,7 @@
                 Obesity = BMI of 30 or greater<br></strong></p>";
             }
             ?>
-            <form action="diet.php" method="POST">
-                <input name="bmi" type="hidden" value="<?php echo $bmi; ?>">
-                <input name="preference" type="hidden" value="<?php echo $preference; ?>">
-            <input type="submit" class="button" style="margin-left: 43.5%; background-color: #FF9800; padding: 10px 10px 10px 10px;cursor:pointer; border: none;border: 2px solid black; border-radius: 5px;" value="Proceed to Generate Diet">
-        </form>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

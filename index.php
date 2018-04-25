@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <?php
-   include('C:\Users\VARTIKA MISHRA\Desktop\shubham\space\4\session.php');
-   error_reporting(0);
-?> 
+session_start();
+if(isset( $_SESSION['login_user'] )){
+    header('Location: profile.php');
+    exit();
+}
+?>
 <html>
 <head>
 	<title>Diet | Health</title>
@@ -123,13 +126,7 @@ span.psw {
 					<li><a href="#" class="ho">About us</a></li>
 					<li><a href="#" class="ho">Blog</a></li>
 					<li><a href="#" class="ho">Browse foods</a></li>
-                    <li>
-                    
-                   <!-- <a class="ho" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a> -->
-                    </li>
-				    
-
-                    
+                    <li><a class="ho" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
                 </ul>
 			</nav>
 		</div>

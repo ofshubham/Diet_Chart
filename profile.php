@@ -30,16 +30,16 @@
 		</div>
 		<div id="content" style="color:white; float:left;">
 
-			<form action="calbmi.php" method="post" id="info" align="center" style="color:white; float: left;">
+			<form action="calbmi.php" method="post" id="info" align="center" style="color:white; float: center;">
 				<br>
 				<table align="center">
 				<tr>
-				  <th >Name:</th>
-				  <td><input type="text" name="name"></td>
+				  <th>Name:</th>
+				  <td><input type="text" name="name" style="width:70%; height:5px;" required></td>
 				</tr>
 				<tr>
 				<th>Age:</th>
-				<td><input type="text" name="age"></td>
+				<td><input type="text" name="age" style="width:70%; height:5px;"required></td>
 				</tr>
 				<tr>
 				  <th>Gender:</th>
@@ -48,19 +48,26 @@
 				</tr>
 				<tr>
 				<th>Weight(In KGs):</th>
-				<td><input type="text" name="weight"></td>
+				<td><input type="text" name="weight" style="width:70%; height:5px;" required></td>
 				</tr>
 				<tr>
 				  <th>Height(In Ms):</th>
-				  <td><input type="text" name="height"></td>
+				  <td><input type="text" name="height" style="width:70%; height:5px;" required></td>
 				</tr>
 				<tr>
+				  <th>I am a:</th>
+				  <td><select name="preference" form="info">
+				  <option value="veg">Vegetarian</option>
+				  <option value="nveg">Non-Vegetarian</option>
+				 </select></td>
+				</tr>
+				<!--<tr>
 				  <th>No. of Meals:</th>
 				  <td><select name="noofmeals" form="info">
 				  <option value="3">3</option>
 				  <option value="4">4</option>
 				 </select></td>
-				</tr>
+				</tr>-->
 				<tr>
 				  <th>Workout Type:</th>
 				  <td><select name="workouttype" form="info">
@@ -70,7 +77,7 @@
 				 </select></td>
 				</tr>
 				</table><br>
-				<input type="submit" value="Calculate" class="btn btn-danger">
+				<input type="submit" value="Calculate" class="btn btn-danger" style="float: center;margin-left: 10%;">
 				</form>
 	
 				<h1 align = "center" id="deshead">Eating smart has never been easier  </h1>
