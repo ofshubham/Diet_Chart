@@ -122,10 +122,10 @@ span.psw {
 			<nav>
 				<a href="index.php" id="home">PATTAL</a>
 				<ul>
-					<li><a href="#" class="ho">How it works</a></li>
+					<li><a href="hiw.php" class="ho">How it works</a></li>
 					<li><a href="#" class="ho">About us</a></li>
 					<li><a href="#" class="ho">Blog</a></li>
-					<li><a href="#" class="ho">Browse foods</a></li>
+					<li><a href="browsefoods.php" class="ho">Browse foods</a></li>
                     <li><a class="ho" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
                 </ul>
 			</nav>

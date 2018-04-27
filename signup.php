@@ -83,10 +83,10 @@
 			<nav>
 				<a href="index.php" id="home">PATTAL</a>
 				<ul>
-					<li><a href="#">How it works</a></li>
+					<li><a href="hiw.php">How it works</a></li>
 					<li><a href="#">About us</a></li>
 					<li><a href="#">Blog</a></li>
-					<li><a href="#">Browse foods</a></li>
+					<li><a href="browsefoods.php">Browse foods</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -10,10 +10,10 @@
 				<nav>
 				<a href="index.php" id="home">PATTAL</a>
 				<ul>
-					<li><a href="#" class="ho">How it works</a></li>
+					<li><a href="hiw.php" class="ho">How it works</a></li>
 					<li><a href="#" class="ho">About us</a></li>
 					<li><a href="#" class="ho">Blog</a></li>
-					<li><a href="#" class="ho">Browse foods</a></li>
+					<li><a href="browsefoods.php" class="ho">Browse foods</a></li>
                     <li><a href="logout.php">Log out</a></li>
                 </ul>
 			</nav>
@@ -54,7 +54,7 @@
 					} 
 				        else if($bmi>=18.5 and $bmi<=24.9)
 				        { 
-				                	$rand = rand(21,25);
+				                	$rand = rand(21,24);
 				        	$combine = "table".$rand;
 						$q="SELECT * FROM $combine";
 						$result = mysqli_query($conn,$q);
@@ -137,7 +137,7 @@
 					} 
 				        else if($bmi>=18.5 and $bmi<=24.9)
 				        {
-				        	$rand = rand(21,25);
+				        	$rand = rand(21,24);
 				        	$combine = "table".$rand;
 						$q="SELECT * FROM $combine";
 						$result = mysqli_query($conn,$q);
@@ -181,6 +181,8 @@
 						mysqli_close($conn);
 					}
 				}
+				$bmr=rand($_POST["tdee"]-15, $_POST["tdee"]+15);
+					echo "<p align='center' style='font-size:20px;'>Total Calories of this diet $bmr</p>";
 				?>
 			</div>
 		</div>
